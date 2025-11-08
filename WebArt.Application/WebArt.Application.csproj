@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\WebArt.Domain\WebArt.Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Features\Artworks\Commands\" />
+      <Folder Include="Features\Artworks\Handlers\" />
+      <Folder Include="Features\Artworks\Queries\" />
+      <Folder Include="Features\Artworks\Validators\" />
+      <Folder Include="Features\Chat\Commands\" />
+      <Folder Include="Features\Chat\Handlers\" />
+      <Folder Include="Features\Chat\Queries\" />
+      <Folder Include="Features\Chat\Validators\" />
+      <Folder Include="Features\Orders\Commands\" />
+      <Folder Include="Features\Orders\Handlers\" />
+      <Folder Include="Features\Orders\Queries\" />
+      <Folder Include="Features\Orders\Validators\" />
+      <Folder Include="Features\Reviews\Commands\" />
+      <Folder Include="Features\Reviews\Handlers\" />
+      <Folder Include="Features\Reviews\Queries\" />
+      <Folder Include="Features\Reviews\Validators\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AutoMapper" Version="15.1.0" />
+      <PackageReference Include="FluentValidation" Version="12.1.0" />
+      <PackageReference Include="MediatR" Version="13.1.0" />
+    </ItemGroup>
+
+</Project>

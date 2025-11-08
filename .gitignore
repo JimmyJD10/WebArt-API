@@ -1,0 +1,85 @@
+# ============================================
+# WebArt-ProyectFinal - .gitignore
+# ============================================
+
+# Compilación y binarios
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+*.dll
+*.exe
+*.log
+*.pdb
+
+# Archivos de Rider / Visual Studio
+.idea/
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Archivos temporales
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# Configuración del sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archivos de entorno local
+.env
+*.env.local
+appsettings.Development.json
+appsettings.Local.json
+
+# Migrations si aún están en desarrollo
+WebArt.Infrastructure/Persistence/Migrations/
+
+# Archivos de publicación o builds
+publish/
+*.publish.xml
+
+# Paquetes NuGet
+*.nupkg
+packages/
+*.snupkg
+
+# Archivos de pruebas locales
+TestResults/
+*.coverage
+*.coveragexml
+
+# Archivos de cache o backups
+*.cache
+*.old
+*.orig
+
+# Logs
+*.log
+logs/
+LogFiles/
+
+# Configuración de usuario local
+*.DotSettings
+*.DotSettings.user
+
+# Archivos generados por dependencias externas
+node_modules/
+wwwroot/lib/
+wwwroot/dist/
+
+# Backups o temporales personales
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+
+# ============================================
+# Fin del archivo .gitignore
+# ============================================

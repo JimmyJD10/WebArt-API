@@ -1,0 +1,6 @@
+@WebArt.Api_HostAddress = http://localhost:5231
+
+GET {{WebArt.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
