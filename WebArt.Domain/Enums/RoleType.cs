@@ -1,8 +1,9 @@
-namespace WebArt.Domain.Enums;
-
-public enum RoleType
+namespace WebArt.Domain.Enums
 {
-    Admin = 1,
-    Artisan = 2,
-    Client = 3
+    public enum RoleType
+    {
+        Client = 1,
+        Artist = 2,
+        Admin = 3
+    }
 }

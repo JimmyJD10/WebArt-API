@@ -1,6 +1,9 @@
 namespace WebArt.Application.Features.Users.Queries;
 
-public class GetAllUsersQuery
+using MediatR;
+using System.Collections.Generic;
+using WebArt.Application.DTOs;
+
+public class GetAllUsersQuery : IRequest<IEnumerable<UserDto>>
 {
-    
 }

@@ -1,6 +1,9 @@
 namespace WebArt.Application.Features.Users.Commands;
 
-public class CreateUserCommand
+using MediatR;
+using WebArt.Application.DTOs;
+
+public class CreateUserCommand : IRequest
 {
-    
+	public UserDto User { get; set; } = null!;
 }
