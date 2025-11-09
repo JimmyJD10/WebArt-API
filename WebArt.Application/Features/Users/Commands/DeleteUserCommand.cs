@@ -1,6 +1,9 @@
 namespace WebArt.Application.Features.Users.Commands;
 
-public class DeleteUserCommand
+using MediatR;
+using System;
+
+public class DeleteUserCommand : IRequest
 {
-    
+	public Guid Id { get; set; }
 }
