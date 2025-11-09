@@ -1,6 +1,9 @@
 namespace WebArt.Application.Features.Users.Commands;
 
-public class UpdateUserCommand
+using MediatR;
+using WebArt.Application.DTOs;
+
+public class UpdateUserCommand : IRequest
 {
-    
+	public UserDto User { get; set; } = null!;
 }

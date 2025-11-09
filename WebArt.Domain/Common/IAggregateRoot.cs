@@ -1,6 +1,11 @@
-namespace WebArt.Domain.Common;
+using System;
 
-public class IAggregateRoot
+namespace WebArt.Domain.Common
 {
-    
+    public interface IAggregateRoot
+    {
+        Guid Id { get; }
+        DateTime CreatedAt { get; }
+        DateTime? UpdatedAt { get; }
+    }
 }

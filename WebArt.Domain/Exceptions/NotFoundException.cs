@@ -1,6 +1,16 @@
-namespace WebArt.Domain.Exceptions;
+using System;
 
-public class NotFoundException
+namespace WebArt.Domain.Exceptions
 {
-    
+    public class NotFoundException : DomainException
+    {
+        public NotFoundException(string entityName, Guid id)
+            : base($"{entityName} with ID '{id}' was not found")
+        {
+        }
+        
+        public NotFoundException(string message) : base(message)
+        {
+        }
+    }
 }
